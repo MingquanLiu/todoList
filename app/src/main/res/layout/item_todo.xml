@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical">
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textSize="25sp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/task_state"
+        android:layout_toEndOf="@+id/task_state" />
+    <TextView
+        android:id="@+id/task_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="15sp"
+        android:layout_below="@+id/task_title"
+        android:layout_alignLeft="@+id/task_title"
+        android:layout_alignStart="@+id/task_title" />
+    <TextView
+        android:id="@+id/task_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="15sp"
+        android:layout_below="@+id/task_title"
+        android:layout_toRightOf="@+id/task_time"
+        android:layout_toEndOf="@+id/task_time" />
+
+    <ImageView
+        android:id="@+id/task_state"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:adjustViewBounds="false"
+        app:srcCompat="@android:color/holo_red_dark"
+        android:layout_alignTop="@+id/task_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
