@@ -17,9 +17,7 @@ public class Task {
         eventState = state;
     }
 
-    public String getTitle(){
-        return eventTitle;
-    }
+    public String getTitle(){return eventTitle;}
     public String getTime(){
         return eventTime;
     }
@@ -28,6 +26,6 @@ public class Task {
     }
     public String getState(){
         return eventState;
-    }
+    }       // State has three states "upcoming","finished" and else;
 
 }
