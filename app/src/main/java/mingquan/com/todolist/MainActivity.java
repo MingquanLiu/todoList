@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 //        myList.add(new Task("Like","Monday","Your home","finished"));     Tester
 //        myList.add(new Task("WTF","Monday","Here","d"));
 //        myList.add(new Task("Mike",null,"Here","d"));
-       myAdapter.notifyDataSetChanged();
+ //      myAdapter.notifyDataSetChanged();
     }
     private void updateUI() {
             myAdapter.notifyDataSetChanged();
