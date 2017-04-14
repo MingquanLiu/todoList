@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
             // Populate the data into the template view using the data object
             taskTitle.setText(task.getTitle());
             taskTime.setText(task.getTime());
-            if(task.getTime()==null)
+            if(task.getTime()==null)                            // Checking for output
                 taskLocation.setText(task.getLocation());
             else
                 if(task.getLocation()==null)
@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
                 else
                     taskLocation.setText(" | "+task.getLocation());
 
-            if(task.getState()=="upcoming")
+            if(task.getState()=="upcoming")                     //Checking for output picture
             taskState.setImageResource(R.drawable.pic1);
             else if(task.getState()=="finished")
                 taskState.setImageResource(R.drawable.pic3);
